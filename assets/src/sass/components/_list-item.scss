@@ -1,0 +1,39 @@
+.list-item:hover {
+  .item-header {
+    text-decoration: underline;
+  }
+  .item-img {
+    -webkit-filter: brightness(1.1);
+  }
+}
+.item-date {
+  @include font-size(14px);
+  color:$gray-dark;
+  margin-bottom:2px;
+}
+.item-header {
+  @include font-size(20px);
+  font-weight: 800;
+  color:$gray-dark;
+  margin-bottom:5px;
+  a {
+    color:$gray-dark;
+    display:block;
+    &:hover {
+    
+    }
+  }
+}
+.item-img {
+  -webkit-transition: all .3s ease;
+     -moz-transition: all .3s ease;
+       -o-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+          transition: all .3s ease;
+  margin-bottom:5px;
+}
+
+.item-description p {
+  @include font-size(18px);
+  color:$gray-medium;
+}
