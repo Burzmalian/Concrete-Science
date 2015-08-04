@@ -8,36 +8,32 @@
 <?php get_header(); ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <div class="container mid">
+  
 <?php if( have_rows('section_template') ): ?>
 <?php while ( have_rows('section_template') ) : the_row(); ?>
+ 
+<?php if( get_row_layout() == 'hero' ): ?>
+  <?php get_template_part( 'inc/layout-hero' ); ?>    
 
-  <?php if( get_row_layout() == 'hero' ): ?>
-    <div class="row">
-      <div class="hero_wrap">
-        <img src="<?php the_sub_field('hero_image'); ?>" alt="<?php the_sub_field('hero_image'); ?>" title="<?php the_sub_field('hero_image'); ?>">
-        <div class="hero-text <?php ?>">
-          <h1><?php the_title(); ?></h1>
-          <p><?php the_sub_field('hero_text'); ?></p>
-          <p><?php the_sub_field('hero_cta'); ?></p>
-        </div>
-      </div>
-    </div>
-    
+<?php elseif( get_row_layout() == 'image_text' ): ?>
+  <?php get_template_part( 'inc/layout-itt' ); ?>
+  
+<?php elseif( get_row_layout() == 'section_header' ): ?>
+  <?php get_template_part( 'inc/layout-head' ); ?>
+  
+<?php elseif( get_row_layout() == 'full' ): ?>
+  <?php get_template_part( 'inc/layout-full' ); ?>
 
-  <?php elseif( get_row_layout() == 'image_text' ): ?>
-    <div class="row">
-    </div>
-    <?php $file = get_sub_field('file'); ?>
+<?php elseif( get_row_layout() == 'three_spot' ): ?>
+  <?php get_template_part( 'inc/layout-three-spot' ); ?>
 
-  <?php endif; ?>
+<?php elseif( get_row_layout() == 'four_spot' ): ?>
+  <?php get_template_part( 'inc/layout-four-spot' ); ?>
 
-<?php endwhile; else : ?>
+<?php endif; //end if get_row_layout ?>
 
-    // no layouts found
+<?php endwhile; endif; //end if while section_template ?>
 
-<?php endif; ?>
-  </div>
-<?php endwhile; endif; ?>
+<?php endwhile; endif; //end if while have_posts ?>
 
 <?php get_footer(); ?>

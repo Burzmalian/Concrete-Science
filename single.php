@@ -19,7 +19,7 @@ $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'b-larg
         <div class="single-content"><?php the_content(); ?></div>
       </article>
       <div class="col-sm-4 sidebar">
-        <?php the_sidebar(); ?>
+        <?php get_sidebar(); ?>
       </div>
     </div>
   </div>

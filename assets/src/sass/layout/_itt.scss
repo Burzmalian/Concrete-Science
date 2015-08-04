@@ -1,0 +1,28 @@
+.vertical-align {
+    //display: flex;
+    //align-items: center;
+}
+
+.itt {
+  padding-top:40px;
+  padding-bottom:25px;
+  //border-bottom:2px solid #bababa;
+  &.light-gray {
+    background:$gray-light;
+  }
+  h2 {
+    @include font-size(28px);
+    line-height: 1.1em;
+    margin-bottom:15px;
+    font-family: $font-stack-open;
+    font-weight: 400;
+  }
+  p {
+    @include font-size(18px);
+    line-height: 1.2em;
+    margin-bottom:15px;
+  }
+  img {
+    margin-bottom:15px;
+  }
+}

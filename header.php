@@ -55,10 +55,3 @@
          
     </div>
   </div>
-  <div class="wrapper"><!-- ends in footer.php -->
-  <div class="container">
-    <div class="row">
-      <img src="http://localhost/concrete-science/wp-content/uploads/2015/07/april-28-2006-043.jpg">
-    </div>
-  </div>
-  

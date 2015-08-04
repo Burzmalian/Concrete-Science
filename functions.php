@@ -24,13 +24,15 @@ function register_my_menus() {
 		wp_enqueue_script( 'prod' );	
     }  
     add_action( 'wp_enqueue_scripts', 'get_scripts' ); 
-	
+
 // REGISTER STYLES
 	function get_styles()
 	{	
     wp_register_style( 'prod', get_template_directory_uri() .'/assets/prod/css/main.css');
+    wp_register_style( 'font', 'http://fonts.googleapis.com/css?family=Lato:400,700');
     
     wp_enqueue_style( 'prod' );
+    wp_enqueue_style( 'font' );
 	}
 	add_action( 'wp_enqueue_scripts', 'get_styles' );
 
@@ -42,7 +44,7 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 // Custom thumbnail sizes
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'b-small', 360 );
-add_image_size( 'b-medium', 750 );
+add_image_size( 'b-medium', 640 );
 
 function paulund_remove_default_image_sizes( $sizes) {
     unset( $sizes['thumbnail']);

@@ -16,10 +16,15 @@
 
 // layout
 @import "layout/grid";
-@import "layout/hero-home";
+@import "layout/hero";
+@import "layout/itt";
+@import "layout/section-head";
+@import "layout/full";
+@import "layout/three-spot";
+@import "layout/four-spot";
 @import "layout/single";
 @import "layout/footer";
 
-
-
 //vendors
+@import "vendors/slick";
+@import "vendors/slick-theme";
