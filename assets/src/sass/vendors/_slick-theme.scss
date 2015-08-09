@@ -145,3 +145,13 @@ $slick-opacity-not-active: 0.3 !default;
         }
     }
 }
+
+.partners .slick-slide img {
+  max-height:60px;
+  width:auto;
+  margin:30px 20px
+}
+
+.partners.slick-slider {
+  padding:0 8%;
+}

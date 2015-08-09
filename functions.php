@@ -6,7 +6,7 @@ function register_my_menus() {
     register_nav_menus( array(
       'main_menu' => 'Main Menu',
       'footer_menu' => 'Footer Menu',
-      'footer_menu_2' => 'Footer Menu 2', 
+      'sidebar_menu' => 'Sidebar Menu', 
  ));
 }
 
@@ -68,5 +68,24 @@ function af_titledespacer($title) {
 }
 
 add_filter('wp_title', 'af_titledespacer');
+
+//ACF Options Pages
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+}
 
 ?>

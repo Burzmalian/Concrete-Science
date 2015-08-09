@@ -1,27 +1,23 @@
-.single-intro {
-  @include clearfix;
-  background: #fff;
-  display: block;
-  padding: 62px 0 50px 0;
-  margin-bottom:40px;
-}
-
 .single-header {
-  @include font-size(30px);
-    font-weight: 800;
-    color:$gray-medium;
-    line-height: 1.2em;
+  @include font-size(28px);
+    font-family: $font-stack-open;
+    font-weight: 400;
+    line-height: 1.1em;
+    margin-bottom:15px;
 }
 
 .single-img {margin-bottom:15px;}
 
 .single-content p {
-  @include font-size(18px);
-    font-weight: 400;
-    color:$gray-medium;
-    line-height: 1.7em;
-    margin-bottom:1.5em;
+ @include font-size(18px);
+    line-height: 1.2em;
+    margin-bottom:15px;
 }
 .single-content blockquote {}
 .single-content h2 {}
-.siongle-content h3 {}
+.single-content h3 {}
+
+.mid-wrap {
+  padding:40px 0;
+  background:$white-off;
+}

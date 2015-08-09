@@ -13,7 +13,7 @@
   $title = $image['title'];
 ?>
 <?php if ($image) : ?>
-          <img src="<?php echo $image_full; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>">
+          <img src="<?php echo $image_full; ?>" alt="<?php echo $alt; ?>">
 <?php endif; //end image stuff ?>
         <div class="center hero-txt-wrap">
           <div class="hero-text <?php //position goes here ?>">

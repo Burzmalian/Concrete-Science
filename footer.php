@@ -1,17 +1,30 @@
+<?php $partners = get_field('partners', 'option'); ?>
+<?php if ($partners): ?>
+ <div class="partners-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+       <h2>Partners</h2>
+        <div class="partners">
+          <?php foreach ($partners as $partner): ?>
+          <div>
+            <img src="<?php echo $partner['sizes']['b-small']; ?>" alt="<?php echo $partner['alt']; ?>" />
+          </div>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
+
 <div class="footer-wrap">
   <div class="container">
     <div class="row footer-menus">
       <div class="col-sm-3">
         <h3>Contact</h3>
-        <?php
-          $defaults = array( 
-              'theme_location' => 'footer_menu_2',
-              'container' => '',
-              'menu_class' => 'footer-menu-2',
-              'menu_id' => '',
-          );
-          wp_nav_menu( $defaults );      
-        ?>
+        <?php the_field('contact_info', 'option'); ?>
+        <p><a href="#">Contact Us</a></p>
       </div>
       <div class="col-sm-3">
        <h3>Services</h3>
@@ -27,11 +40,15 @@
       </div>
       <div class="col-sm-3">
         <h3>About</h3>
-        awd
+        <?php the_field('about_footer', 'option'); ?>
       </div>
       <div class="col-sm-3">
         <h3>Connect</h3>
-        socials
+        <ul class="socials">
+          <li><a class="youtube" href="http://www.youtube.com/ConcreteScience">Youtube</a></li>
+          <li><a class="facebook" href="http://www.facebook.com/ConcreteScience">Facebook</a></li>
+          <li><a class="google" href="https://plus.google.com/115078954904092653713">Google+</a></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -40,7 +57,8 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        &copy; <?php echo date('Y'); ?> Concrete Science
+        <p>&copy; <?php echo date('Y'); ?> Concrete Science</p>
+        <p><a href="<?php echo esc_url( home_url( '/' ) ); ?>/terms-conditions">Terms & Conditions</a></p>
       </div>
     </div>
   </div>
