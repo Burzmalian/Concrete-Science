@@ -9,6 +9,10 @@
   &:hover {
     text-decoration: none;
   }
+  &.small {
+    padding:5px 10px;
+    @include font-size(15px);
+  }
 }
 
   ._blue {
@@ -23,3 +27,23 @@
     background:$orange;
     }
   }
+
+.arrow {
+  position: relative;
+  padding-right: 15px;
+  @include font-size(18px);
+  line-height:1em;
+  font-weight:700;
+  color: $blue;
+  &:after {
+    position: absolute;
+    content:"\276F";
+    right:0;
+    top:0;
+    @include font-size(20px);
+    line-height:1em;
+  }
+  &:hover {
+    color: $blue-light;
+  }
+}

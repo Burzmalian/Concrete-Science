@@ -6,11 +6,11 @@
       <div class="col-sm-12">
        <h2>Partners</h2>
         <div class="partners">
-          <?php foreach ($partners as $partner): ?>
+<?php foreach ($partners as $partner): ?>
           <div>
             <img src="<?php echo $partner['sizes']['b-small']; ?>" alt="<?php echo $partner['alt']; ?>" />
           </div>
-          <?php endforeach; ?>
+<?php endforeach; ?>
         </div>
       </div>
     </div>
@@ -24,7 +24,7 @@
       <div class="col-sm-3">
         <h3>Contact</h3>
         <?php the_field('contact_info', 'option'); ?>
-        <p><a href="#">Contact Us</a></p>
+        <p><a class="open-popup-link" href="#popup">Contact Us</a></p>
       </div>
       <div class="col-sm-3">
        <h3>Services</h3>
