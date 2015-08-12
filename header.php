@@ -46,7 +46,9 @@
     <header class="container">
       <div class="row">
         <div class="col-sm-12 head">
-          <div class="header-cta"><h3>Call 763-420-4073 or</h3><a class="btn">Get a free Quote</a></div>
+          <div class="header-cta"><h3>Call 763-420-4073</h3>
+          <a href="#popup" class="button medium _orange open-popup-link">Free Quote</a>
+        </div>
           <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">Concrete Science</a>
         </div>
       </div>

@@ -25,6 +25,10 @@ $(document).ready(function () {
   });
 
 });
+
+$(window).bind("load", function() {
+   $('.header-cta').addClass('hdr-active');
+});
 /*jshint browser:true */
 /*!
 * FitVids 1.1
