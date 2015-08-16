@@ -64,7 +64,7 @@ function trim_excerpt($text) {
     }
 add_filter('get_the_excerpt', 'trim_excerpt');
 
-// Removes the white spaces from wp_title
+// Removes the white spaces from wp_titles
 function af_titledespacer($title) {
 	return trim($title);
 }
