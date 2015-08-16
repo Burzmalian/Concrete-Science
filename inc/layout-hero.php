@@ -31,7 +31,7 @@
 <?php endif; ?>
         </div>
         </div>
-<?php $counter++; // add one per row ?> 
+<?php $counter++; // add one per rows ?> 
         </div>
 <?php endwhile; ?>  
       </div>

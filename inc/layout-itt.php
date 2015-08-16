@@ -1,4 +1,5 @@
-<div class="wrapper <?php if ( get_sub_field('itt_bg') == 'lg' ): ?>bg-light-gray<?php endif; ?>">
+<?php // Layout for image title text ?>
+ <div class="wrapper <?php if ( get_sub_field('itt_bg') == 'lg' ): ?>bg-light-gray<?php endif; ?>">
   <div class="container">
 <?php //begin image stuff
   $image = get_sub_field('itt_image');

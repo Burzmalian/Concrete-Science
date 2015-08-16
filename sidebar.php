@@ -2,7 +2,7 @@
 <?php if( have_rows('sidebar', 'option') ): ?>
 <?php while ( have_rows('sidebar', 'option') ) : the_row(); ?>
 <?php if( get_row_layout() == 'sidebar_section' ): ?>
-  <?php the_sub_field('sidebar_wys'); ?>
+<?php the_sub_field('sidebar_wys'); ?>
 <?php endif; endwhile; ?>
 <?php else : ?>
 

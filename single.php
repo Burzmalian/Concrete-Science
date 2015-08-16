@@ -24,5 +24,5 @@ $medium_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'b-med
     </div>
   </div>
 </div>
-<?php endwhile; endif; ?>
+<?php endwhile; endif;  ?>
 <?php get_footer(); ?>

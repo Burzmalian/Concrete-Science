@@ -6,7 +6,12 @@
     margin-bottom:15px;
 }
 
-.single-img {margin-bottom:15px;}
+.single-img,
+.single-content img {
+  margin:0 auto 15px auto;
+  max-width:100%;
+  height:auto; 
+}
 
 .single-content p {
  @include font-size(18px);
