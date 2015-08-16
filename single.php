@@ -13,7 +13,7 @@ $small_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'b-smal
 $medium_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'b-medium' );
 ?>    
 	      <figure>
-          <img class="single-img" srcset="<?php echo $small_image_url[0] ?> 480w, <?php echo $medium_image_url[0]; ?> 750w" sizes="(min-width: 750px) 750px, (min-width: 360px) 360px" alt="" width="800" height="1200">
+          <img class="single-img" srcset="<?php echo $small_image_url[0] ?> 480w, <?php echo $medium_image_url[0]; ?> 750w" sizes="(min-width: 750px) 750px, (min-width: 360px) 480px" alt="" width="800" height="1200">
         </figure>
 <?php endif; ?>
         <div class="single-content"><?php the_content(); ?></div>

@@ -2,16 +2,14 @@
   <div class="container">
 <?php //begin image stuff
   $image = get_sub_field('itt_image');
-  $image_small = $image['sizes']['b-small']; 
-  $image_medium = $image['sizes']['b-medium'];
-  $image_full = $image['url']; 
+  $image_small = $image['sizes']['b-small'];  
   $alt = $image['alt'];
   $title = $image['title'];
 ?>
     <div class="row itt vertical-align">
       <div class="col-sm-6 <?php if (get_sub_field('itt_position') == "Right" ) : ?>col-sm-push-6<?php endif; ?>">
     <?php if ($image) : ?>
-        <img src="<?php echo $image_medium; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>">
+        <img class="width-full" src="<?php echo $image_small; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>">
     <?php else: ?>
         
     <?php endif; //end image stuff ?>

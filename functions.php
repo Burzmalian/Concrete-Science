@@ -43,8 +43,10 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 // Custom thumbnail sizes
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'b-small', 360 );
-add_image_size( 'b-medium', 640 );
+add_image_size( 'b-thumb', 360 );
+add_image_size( 'b-small', 640 );
+add_image_size( 'b-medium', 1024 );
+add_image_size( 'b-large', 1280 );
 
 function paulund_remove_default_image_sizes( $sizes) {
     unset( $sizes['thumbnail']);
@@ -87,5 +89,60 @@ if( function_exists('acf_add_options_page') ) {
 	));
 	
 }
+
+
+// Recent Posts Shortcode
+function my_recent_posts_shortcode($atts) {
+  
+  extract(shortcode_atts(array(
+    'number' => '3',
+  ), $atts));
+  
+ $q = new WP_Query(
+   array( 'orderby' => 'date', 'posts_per_page' => $number)
+ );
+
+$list = '<div class="recent-posts"><h2>Blog</h2>';
+
+while($q->have_posts()) : $q->the_post();
+
+ $list .= '<h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>';
+ $list .= '<p>' . get_the_excerpt() . '</p>';
+
+endwhile;
+
+wp_reset_query();
+
+return $list . '</div>';
+
+}
+
+add_shortcode('recent-posts', 'my_recent_posts_shortcode');
+
+
+// Button Shortcode
+function buttons($atts, $content = null) {
+  extract(shortcode_atts(array(
+    'href' => 'http://google.com',
+    'size' => '',
+  ), $atts));
+  return '<p><a class="button _orange '.$size.'" href="'.$href.'">'.$content.'</a></p>';
+}
+add_shortcode("button", "buttons");
+
+// Arrow Link Shortcode
+function arrows($atts, $content = null) {
+  extract(shortcode_atts(array(
+    'href' => 'http://google.com',
+  ), $atts));
+  return '<p><a class="arrow" href="'.$href.'">'.$content.'</a></p>';
+}
+add_shortcode("arrow-link", "arrows");
+
+
+// Allow Text widgets to execute shortcodes
+add_filter('widget_text', 'do_shortcode');
+
+
 
 ?>

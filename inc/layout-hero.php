@@ -5,15 +5,16 @@
 <?php while ( have_rows('hero_set') ) : the_row(); ?>
         <div class="hero-wrap">  
 <?php //begin image stuff
-  $image = get_sub_field('hero_image');
+  $image = get_sub_field('hero_image'); 
   $image_small = $image['sizes']['b-small']; 
   $image_medium = $image['sizes']['b-medium'];
+  $image_large = $image['sizes']['b-large'];
   $image_full = $image['url']; 
   $alt = $image['alt'];
   $title = $image['title'];
 ?>
 <?php if ($image) : ?>
-          <img src="<?php echo $image_full; ?>" alt="<?php echo $alt; ?>">
+          <img class="hero-image" src="<?php echo $image_medium; ?>" srcset="<?php echo $image_small; ?> 767w, <?php echo $image_medium; ?> 1024w, <?php echo $image_large; ?> 1280w, <?php echo $image_full; ?> 1920w" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>">
 <?php endif; //end image stuff ?>
         <div class="center hero-txt-wrap">
           <div class="hero-text <?php //position goes here ?>">
