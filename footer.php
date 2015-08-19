@@ -8,7 +8,7 @@
         <div class="partners">
 <?php foreach ($partners as $partner): ?>
           <div>
-            <img src="<?php echo $partner['sizes']['b-small']; ?>" alt="<?php echo $partner['alt']; ?>" />
+            <img src="<?php echo $partner['sizes']['b-thumb']; ?>" alt="<?php echo $partner['alt']; ?>" />
           </div>
 <?php endforeach; ?>
         </div>
