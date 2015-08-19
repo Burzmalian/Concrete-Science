@@ -143,6 +143,6 @@ add_shortcode("arrow-link", "arrows");
 // Allow Text widgets to execute shortcodes
 add_filter('widget_text', 'do_shortcode');
 
-include_once('acf-wp-wysiwyg/acf-wp_wysiwyg.php'); 
+include_once('inc/acf-wp-wysiwyg/acf-wp_wysiwyg.php'); 
 
 ?>
