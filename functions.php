@@ -57,6 +57,19 @@ function paulund_remove_default_image_sizes( $sizes) {
 }
 add_filter('intermediate_image_sizes_advanced', 'paulund_remove_default_image_sizes');
 
+
+add_filter('image_size_names_choose', 'my_image_sizes');
+function my_image_sizes($sizes) {
+$addsizes = array(
+"b-thumb" => __( "Thumbnail"),
+"b-small" => __( "Small"),
+"b-medium" => __( "Medium"),
+"b-large" => __( "Large"),
+);
+$newsizes = array_merge($sizes, $addsizes);
+return $newsizes;
+}
+
 // Replace the default ellipsis
 function trim_excerpt($text) {
      $text = str_replace('[&hellip;]', '...', $text);
