@@ -24,10 +24,16 @@
 .single-content ol {
   list-style:decimal;
   padding-left:30px;
+  li {
+    margin-bottom:5px;
+  }
 }
 .single-content ul {
   list-style:disc;
   padding-left:30px;
+  li {
+    margin-bottom:5px;
+  }
 }
 .single-content blockquote {}
 .single-content h2 {}
