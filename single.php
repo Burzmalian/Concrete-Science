@@ -9,10 +9,10 @@
 <?php if ( has_post_thumbnail() ) : ?>
 
 <?php
-$medium_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'b-medium' );
+$small_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'b-small' );
 ?>    
 	      <figure>
-          <img class="single-img" src="<?php echo $medium_image_url[0] ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>">
+          <img class="single-img" src="<?php echo $small_image_url[0] ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>">
         </figure>
 <?php endif; ?>
         <div class="single-content"><?php the_content(); ?></div>
