@@ -20,9 +20,10 @@
         <h2 class="itt-title"><?php the_sub_field('itt_title'); ?></h2>
         <p class="itt-text"><?php the_sub_field('itt_text'); ?></p>
     <?php if (get_sub_field('itt_button_text')) : ?>  
-        <p><a href="<?php the_sub_field('itt_button_link'); ?>" class="button _orange"><?php the_sub_field('itt_button_text'); ?></a></p>
+        <p style="text-align:center;"><a href="<?php the_sub_field('itt_button_link'); ?>" class="button _orange"><?php the_sub_field('itt_button_text'); ?></a></p>
     <?php endif; ?>
       </div>
     </div>
   </div>
+</div>
 </div>
