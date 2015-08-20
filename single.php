@@ -13,7 +13,7 @@ $small_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'b-smal
 $thumb_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'b-thumb' );
 ?>    
 	      <figure>
-          <img class="single-img" src="<?php echo $small_image_url[0]; ?>" srcset="<?php echo $thumb_image_url[0] ?> 767w" alt="<?php the_title(); ?>" title="<?php the_title(); ?>">
+          <img class="single-img" src="<?php echo $thumb_image_url[0] ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>">
         </figure>
 <?php endif; ?>
         <div class="single-content"><?php the_content(); ?></div>
