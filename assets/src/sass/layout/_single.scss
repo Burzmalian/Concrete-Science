@@ -13,10 +13,21 @@
   height:auto; 
 }
 
-.single-content p {
+.single-content p,
+.single-content ol,
+.single-content ul {
  @include font-size(18px);
     line-height: 1.4em;
     margin-bottom:15px;
+}
+
+.single-content ol {
+  list-style:decimal;
+  padding-left:30px;
+}
+.single-content ul {
+  list-style:disc;
+  padding-left:30px;
 }
 .single-content blockquote {}
 .single-content h2 {}
