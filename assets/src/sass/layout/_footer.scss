@@ -14,6 +14,12 @@
     padding-left:8px;
     border-left:6px solid $orange-dark;
   }
+  a {
+    color:$white;
+    &:hover {
+      color:$white;
+    }
+  }
 }
 .footer-menus > div {
   padding-top:30px;

@@ -11,15 +11,15 @@
     background:$gray-light;
   }
   h2 {
-    @include font-size(28px);
-    line-height: 1.1em;
+    @include font-size(32px);
+    line-height: 1.2em;
     margin-bottom:15px;
     font-family: $font-stack-open;
     font-weight: 700;
   }
   p {
     @include font-size(18px);
-    line-height: 1.2em;
+    line-height: 1.4em;
     margin-bottom:15px;
   }
   img {

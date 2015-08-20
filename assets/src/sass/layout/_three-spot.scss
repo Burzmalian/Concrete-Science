@@ -2,15 +2,15 @@
   padding-top:40px;
   padding-bottom:25px;
   h2 {
-    @include font-size(28px);
+    @include font-size(32px);
     font-family: $font-stack-open;
     font-weight: 700;
-    line-height: 1.1em;
+    line-height: 1.2em;
     margin-bottom:15px;
   }
   p {
     @include font-size(18px);
-    line-height: 1.2em;
+    line-height: 1.4em;
     margin-bottom:15px;
   }
   img {
