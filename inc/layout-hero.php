@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper hero">
 <?php if( have_rows('hero_set') ): ?>
 <?php $counter = 1; ?>
       <div class="hero-slider ">

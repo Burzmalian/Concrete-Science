@@ -16,9 +16,9 @@ $(document).ready(function () {
     centerMode: true,
     variableWidth: true
   });
-  
+
   $('.open-popup-link').magnificPopup({
-    type:'inline',
+    type: 'inline',
     midClick: true,
     removalDelay: 300,
     mainClass: 'mfp-fade'
@@ -26,6 +26,21 @@ $(document).ready(function () {
 
 });
 
-$(window).bind("load", function() {
-   $('.header-cta').addClass('hdr-active');
+$(window).bind("load", function () {
+  $('.header-cta').addClass('hdr-active');
 });
+
+$(document).ready(function () {
+  // run test on initial page load
+  checkSize();
+
+  // run test on resize of the window
+  $(window).resize(checkSize);
+});
+
+//Function to the css rule
+function checkSize() {
+  if ($(".hero-slider").css("display") == "none") {
+    $('.hero-txt-wrap').appendTo('.hero');
+  }
+}

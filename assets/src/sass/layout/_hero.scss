@@ -41,7 +41,13 @@
     width:100%;
   }
   .hero-text {
-    padding:10px 50px;
+    padding:15px;
+  }
+  .center.hero-txt-wrap {
+    position: static;
+    top:auto;
+    left:auto;
+    transform: none;
   }
 }
 
