@@ -17,7 +17,7 @@
           <img class="hero-image" src="<?php echo $image_medium; ?>" srcset="<?php echo $image_small; ?> 767w, <?php echo $image_medium; ?> 1024w, <?php echo $image_large; ?> 1280w, <?php echo $image_full; ?> 1920w" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>">
 <?php endif; //end image stuff ?>
         <div class="center hero-txt-wrap">
-          <div class="hero-text <?php //position goes here ?>">
+          <div class="hero-text">
 <?php if ( $counter == 1 ): ?>             
             <h1 class="hero-title"><?php the_title(); ?></h1>
 <?php else: ?>
