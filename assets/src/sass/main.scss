@@ -13,6 +13,11 @@
 @import "components/addthis";
 @import "components/wordpress-core";
 
+//vendors
+@import "vendors/slick";
+@import "vendors/slick-theme";
+@import "vendors/magnific-popup";
+
 // layout
 @import "layout/grid";
 @import "layout/hero";
@@ -24,7 +29,3 @@
 @import "layout/single";
 @import "layout/footer";
 
-//vendors
-@import "vendors/slick";
-@import "vendors/slick-theme";
-@import "vendors/magnific-popup";
