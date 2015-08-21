@@ -56,8 +56,7 @@
     display:none; 
   }
   .hero-text .button {
-    padding: 6px 10px;
-    @include font-size(14px);
+    display:none
   }
 }
 
@@ -68,6 +67,7 @@
   }
   .hero-text {
     padding:10px 50px;
+    text-align: center;
   }
 }
 
@@ -79,5 +79,6 @@
   }
   .hero-text {
     padding:20px 30px;
+    text-align: left;
   }
 }
