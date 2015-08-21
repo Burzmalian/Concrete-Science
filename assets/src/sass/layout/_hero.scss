@@ -39,6 +39,25 @@
   }
   .hero-text {
     padding:10px 50px;
+    text-align: center;
+  }
+  .hero-title {
+    @include font-size(28px);
+    line-height: 1.1em;
+    margin-bottom:10px;
+  }
+
+  .hero-sub {
+    @include font-size(16px);
+    line-height: 1.2em;
+    margin-bottom:10px;
+  }
+  .hero-sub {
+    display:none; 
+  }
+  .hero-text .button {
+    padding: 6px 10px;
+    @include font-size(14px);
   }
 }
 
