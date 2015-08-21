@@ -33,28 +33,16 @@
 }
 
 @media screen and (max-width: $screen-xs-max) {
-  .hero-slider {
-    display:none;
-  }
   .hero-txt-wrap {
     height:100%;
     width:100%;
   }
   .hero-text {
-    padding:15px;
-  }
-  .center.hero-txt-wrap {
-    position: static;
-    top:auto;
-    left:auto;
-    transform: none;
+    padding:10px 50px;
   }
 }
 
 @media screen and (min-width: $screen-sm-min) {
-  .hero-slider {
-    display:block;
-  }
   .hero-txt-wrap {
     height:100%;
     width:100%;
