@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 
 $(window).bind("load", function() {
-   $('.header-cta').addClass('.hrs-active');
+   $('.header-cta').addClass('hdr-active');
 });
 /*jshint browser:true */
 /*!
