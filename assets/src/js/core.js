@@ -32,5 +32,9 @@ $(document).ready(function () {
     removalDelay: 300,
     mainClass: 'mfp-fade'
   });
- 
+});
+
+
+$(window).bind("load", function() {
+   $('.header-cta').addClass('.hrs-active');
 });
