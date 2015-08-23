@@ -24,11 +24,20 @@
 .footer-menus > div {
   padding-top:30px;
   padding-bottom:30px;
+  
 }
 .footer-menus ul li a {
   color:#bababa;
+  @include font-size(18px);
+  line-height: 1.4em;
+  margin-bottom:15px;
 }
 .super-footer-wrap {
+  a {
+    color:$white;
+    &:hover {
+      color:$white;
+  }
   background:$gray-dark;
   padding-top:10px;
   padding-bottom:10px;
@@ -52,6 +61,7 @@
 .socials {
   list-style: none;
   margin-top:25px;
+  padding:0;
   a {
     display:block;
     position:relative;
