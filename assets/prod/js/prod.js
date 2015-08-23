@@ -27,7 +27,9 @@ $(document).ready(function () {
     variableWidth: true
   });
   
-  $('a').prop('href','#popup').addClass('open-popup-link');
+  if ( $('a').attr('href','#popup') ) {
+    $(this).addClass('open-popup-link');
+  }
   
 
   $('.open-popup-link').magnificPopup({
