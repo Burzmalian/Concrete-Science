@@ -27,10 +27,10 @@ $(document).ready(function () {
     variableWidth: true
   });
   
-  if ( $('a').attr('href','#popup') ) {
+  $('a[href*="#popup"]').each(function() {
     $(this).addClass('open-popup-link');
-  }
-  
+});
+
 
   $('.open-popup-link').magnificPopup({
     type: 'inline',
