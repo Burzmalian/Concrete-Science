@@ -84,5 +84,6 @@
   </div>
   
 <div id="popup" class="white-popup mfp-hide">
+  <h2>Connect with one of our experts</h2>
   <?php echo do_shortcode('[ninja_forms id=5]') ?>
 </div>

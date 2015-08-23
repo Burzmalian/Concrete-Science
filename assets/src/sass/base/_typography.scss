@@ -16,3 +16,61 @@ a:hover {
   text-decoration: underline;
   color:$blue-light;
 }
+
+.form-select {
+  width:100%;
+}
+
+.form-submit {
+  border:0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+h1 {
+  @include font-size(40px);
+  font-weight: 700;
+  color: $white;
+  line-height: 1.1em;
+  margin-bottom:15px;
+  font-family: $font-stack-open;
+}
+
+h2 {
+  @include font-size(32px);
+  line-height: 1.2em;
+  margin-bottom:15px;
+  font-family: $font-stack-open;
+  font-weight: 700;
+}
+
+h3 {
+  @include font-size(26px);
+  line-height: 1.2em;
+  margin-bottom:15px;
+  font-family: $font-stack-open;
+  font-weight: 700;
+}
+
+ol {
+  list-style: decimal;
+  padding-left:30px;
+  margin-bottom:10px;
+  li {
+    @include font-size(18px);
+    line-height: 1.2em;
+    margin-bottom:5px;
+  }
+}
+
+ul {
+  list-style: disc;
+  margin-bottom:10px;
+  padding-left:30px;
+  li {
+    @include font-size(18px);
+    line-height: 1.2em;
+    margin-bottom:5px;
+  }
+}
