@@ -84,5 +84,5 @@
   </div>
   
 <div id="popup" class="white-popup mfp-hide">
-  Popup content
+  <?php echo do_shortcode('[ninja_forms id=5]') ?>
 </div>

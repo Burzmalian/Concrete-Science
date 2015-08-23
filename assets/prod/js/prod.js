@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   $('.hero-slider').slick({
     dots: true,
     draggable: true,
@@ -32,6 +33,7 @@ $(document).ready(function () {
     removalDelay: 300,
     mainClass: 'mfp-fade'
   });
+  
 });
 
 
