@@ -24,13 +24,12 @@
 .footer-menus > div {
   padding-top:30px;
   padding-bottom:30px;
-  
-}
-.footer-menus ul li a {
-  color:#bababa;
   @include font-size(18px);
   line-height: 1.4em;
   margin-bottom:15px;
+}
+.footer-menus ul li a {
+  color:#bababa;
 }
 .super-footer-wrap {
   a {
