@@ -26,6 +26,9 @@ $(document).ready(function () {
     centerMode: true,
     variableWidth: true
   });
+  
+  $('a').prop('href','#popup').addClass('open-popup-link');
+  
 
   $('.open-popup-link').magnificPopup({
     type: 'inline',
