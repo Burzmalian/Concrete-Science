@@ -54,7 +54,7 @@ h3 {
 
 ol {
   list-style: decimal;
-  padding-left:30px;
+  padding-left:20px;
   margin-bottom:15px;
   li {
     @include font-size(18px);
@@ -66,7 +66,7 @@ ol {
 ul {
   list-style: disc;
   margin-bottom:15px;
-  padding-left:30px;
+  padding-left:20px;
   li {
     @include font-size(18px);
     line-height: 1.2em;
