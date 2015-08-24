@@ -14,7 +14,7 @@ $(document).ready(function () {
   ]
   });
 
-  $('iframe').wrap('<div class="iframe"></div>');
+  $('iframe, object').wrap('<div class="iframe"></div>');
   $('.iframe').fitVids();
 
 
