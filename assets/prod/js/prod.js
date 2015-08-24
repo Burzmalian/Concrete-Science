@@ -39,7 +39,13 @@ $(document).ready(function () {
     mainClass: 'mfp-fade'
   });
   
+  $('.nav-icon').click(function() {
+    $(this).toggleClass('active');
+    $('.main-menu').toggleClass('show');
+  });
+  
 });
+
 
 
 $(window).bind("load", function() {
