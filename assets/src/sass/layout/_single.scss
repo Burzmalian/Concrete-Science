@@ -3,7 +3,7 @@
     font-family: $font-stack-open;
     font-weight: 700;
     line-height: 1.2em;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 .single-img {
@@ -46,4 +46,7 @@
 .mid-wrap {
   padding:40px 0;
   background:$white-off;
+}
+.mid article {
+  margin-bottom:25px;
 }
