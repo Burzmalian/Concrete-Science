@@ -120,7 +120,6 @@ $list = '<div class="recent-posts"><h2>Blog</h2>';
 while($q->have_posts()) : $q->the_post();
 
  $list .= '<h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>';
- $list .= '<p>' . get_the_excerpt() . '</p>';
 
 endwhile;
 
