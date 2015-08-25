@@ -158,11 +158,11 @@
     left:0;
     width:100%;
     li {
-      &:first-child {
-        margin-left:auto;
-      }
       margin:0;
       width:100%;
+      &:first-child {
+      margin-left:auto;
+      }
       a {
       background:#444;
       padding:10px 20px;
@@ -173,7 +173,7 @@
   }
   .main-menu.show {
     display:block;
-    z-index: 10px;
+    z-index: 10;
   }
   .main-menu.show li.current-menu-item a {
     border-bottom: 0;
