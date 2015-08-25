@@ -147,10 +147,27 @@
 }
 
 @media (max-width:767px) {
+  
+  .logo {
+    width: 135px;
+    height: 100px;
+    background-size: 100%;
+  }
   .nav-cta {
   display:block;
   }
-  .header-cta {display:none;}
+  .hdr-active {
+    top:-45px;
+  }
+  .header-cta {
+  top:-45px;
+  right:0;
+  background:none;
+  border-radius:none;
+  height:auto;
+  width:auto;
+  border:0;
+  }
   .nav-icon {
     display:block;
   }
