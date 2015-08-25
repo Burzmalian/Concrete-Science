@@ -147,14 +147,17 @@
 }
 
 @media (max-width:767px) {
-  
+  .nav-cta {
+  display:block;
+  }
+  .header-cta {display:none;}
   .nav-icon {
     display:block;
   }
   .main-menu {
     display:none;
     position: absolute;
-    top:35px;
+    top:37px;
     left:0;
     width:100%;
     li {
