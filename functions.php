@@ -157,12 +157,12 @@ add_filter('widget_text', 'do_shortcode');
 
 include_once('inc/acf-wp-wysiwyg/acf-wp_wysiwyg.php'); 
 
-add_action( 'wp_print_scripts', 'my_deregister_javascript', 100 );
+add_action( 'wp_print_styles', 'my_deregister_styles', 100 );
 
-function my_deregister_javascript() {
-	wp_deregister_script( 'jquery-qtip' );
-  wp_deregister_script( 'jquery-rating' );
-  wp_deregister_script( 'ninja-forms-display' );
+function my_deregister_styles() {
+	wp_deregister_style( 'jquery-qtip' );
+  wp_deregister_style( 'jquery-rating' );
+  wp_deregister_style( 'ninja-forms-display' );
 }
 
 
