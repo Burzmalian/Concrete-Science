@@ -81,3 +81,8 @@ strong {
 em {
   font-style: italic;
 }
+
+a[href^=tel] {
+text-decoration:inherit;
+color: inherit;
+}
