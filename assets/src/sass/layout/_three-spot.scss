@@ -18,3 +18,10 @@
     height:auto;
   }
 }
+
+
+@media (max-width:767px) {
+  .three-spot > div {
+    margin-bottom:30px;
+  }
+}

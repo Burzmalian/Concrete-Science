@@ -18,3 +18,9 @@
     height:auto;
   }
 }
+
+@media (max-width:767px) {
+  .four-spot > div {
+    margin-bottom:30px;
+  }
+}
