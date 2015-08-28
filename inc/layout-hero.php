@@ -6,15 +6,15 @@
         <div class="hero-wrap">  
 <?php //begin image stuff
   $image = get_sub_field('hero_image'); 
+$image_thumb = $image['sizes']['b-thumb']; 
   $image_small = $image['sizes']['b-small']; 
   $image_medium = $image['sizes']['b-medium'];
   $image_large = $image['sizes']['b-large'];
-  $image_full = $image['url']; 
   $alt = $image['alt'];
   $title = $image['title'];
 ?>
 <?php if ($image) : ?>
-          <img class="hero-image" src="<?php echo $image_medium; ?>" srcset="<?php echo $image_small; ?> 767w, <?php echo $image_medium; ?> 1024w, <?php echo $image_large; ?> 1280w, <?php echo $image_full; ?> 1920w" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>">
+          <img class="hero-image" src="<?php echo $image_small; ?>" srcset="<?php echo $image_thumb; ?> 767w, <?php echo $image_medium; ?> 1024w, <?php echo $image_large; ?> 1280w" alt="<?php echo $alt; ?>">
 <?php endif; //end image stuff ?>
         <div class="center hero-txt-wrap">
           <div class="hero-text">
