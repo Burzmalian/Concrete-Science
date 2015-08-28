@@ -137,8 +137,10 @@ function buttons($atts, $content = null) {
   extract(shortcode_atts(array(
     'href' => 'http://google.com',
     'size' => '',
+    'width' => '',
+    
   ), $atts));
-  return '<p><a class="button _orange '.$size.'" href="'.$href.'">'.$content.'</a></p>';
+  return '<p><a class="button _orange ' .$size. ' ' .$width.'" href="'.$href.'">'.$content.'</a></p>';
 }
 add_shortcode("button", "buttons");
 
