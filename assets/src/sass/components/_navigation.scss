@@ -118,7 +118,7 @@
   content:"";
   height:25px;
   width:25px;
-  background:url(../images/phone.png) no-repeat;
+  background:url(../images/phone-icon.png) no-repeat;
   left:0;
   top:0;
 }
@@ -129,7 +129,7 @@
   width: 25px;
   display:none;
   position: absolute;
-  top: 3px;
+  top: 8px;
 }
 .nav-icon:hover {cursor: pointer;}
 .nav-icon:after, 
@@ -191,7 +191,7 @@
   .main-menu {
     display:none;
     position: absolute;
-    top:37px;
+    top:45px;
     left:0;
     width:100%;
     li {
