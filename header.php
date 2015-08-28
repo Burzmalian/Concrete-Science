@@ -57,7 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <header class="container">
       <div class="row">
         <div class="col-sm-12 head">
-          <div class="header-cta"><h3>Call 763-420-4073</h3>
+          <div class="header-cta"><h3 class="phone">763-420-4073</h3>
           <a href="#popup" class="button medium _orange open-popup-link">Free Quote</a>
         </div>
           <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">Concrete Science</a>
@@ -80,7 +80,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             wp_nav_menu( $defaults );      
             ?>
             <div class="nav-cta">
-              <a class="button small _orange open-popup-link" href="#popup">Free Quote</a>
+              <a class="button medium _orange open-popup-link" href="#popup">Free Quote</a>
               763-420-4073
             </div>
             <div class="nav-icon">

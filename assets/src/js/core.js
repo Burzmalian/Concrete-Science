@@ -1,18 +1,5 @@
 $(document).ready(function () {
   
-  $('.hero-slider').slick({
-    dots: true,
-    draggable: true,
-    adaptiveHeight: true,
-     responsive: [
-    {
-      breakpoint: 767,
-      settings: {
-        dots:false,
-      }
-    }
-  ]
-  });
 
   $('iframe, object').wrap('<div class="iframe"></div>');
   $('.iframe').fitVids();
