@@ -39,8 +39,8 @@
   margin:0;
   li {
     float:left;
+    margin-bottom:0;
     &:first-child {
-      margin:0;
       margin-left:-10px;
     }
     a {
