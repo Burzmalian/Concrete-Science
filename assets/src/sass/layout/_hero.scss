@@ -36,6 +36,9 @@
   .hero-txt-wrap {
     height:100%;
     width:100%;
+    top:0;
+    left:0;
+    transition:inherit;
   }
   .hero-text {
     padding:10px 50px;
