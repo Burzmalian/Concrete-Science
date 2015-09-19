@@ -12,9 +12,11 @@ $image_thumb = $image['sizes']['b-thumb'];
   $image_large = $image['sizes']['b-large'];
   $alt = $image['alt'];
   $title = $image['title'];
+  $width = $image['sizes'][ $size . '-width' ];
+	$height = $image['sizes'][ $size . '-height' ];
 ?>
 <?php if ($image) : ?>
-          <img class="hero-image" src="<?php echo $image_small; ?>" srcset="<?php echo $image_thumb; ?> 767w, <?php echo $image_medium; ?> 1024w, <?php echo $image_large; ?> 1280w" alt="<?php echo $alt; ?>">
+          <img class="hero-image" height="<?php echo $height; ?>" width="<?php echo $width; ?>" src="<?php echo $image_small; ?>" srcset="<?php echo $image_thumb; ?> 767w, <?php echo $image_medium; ?> 1024w, <?php echo $image_large; ?> 1280w" alt="<?php echo $alt; ?>">
 <?php endif; //end image stuff ?>
         <div class="center hero-txt-wrap">
           <div class="hero-text">
