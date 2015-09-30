@@ -30,6 +30,18 @@
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <style>
+      .center {
+        top:20%;
+        left:20%;
+      }
+      @media screen and (min-width: 768px) {
+        .hero-txt-wrap {
+            height: auto;
+            width: auto;
+        }
+      }
+    </style>
   <![endif]-->
   
 <?php if ( is_user_logged_in() ) { ?>
@@ -37,6 +49,7 @@
     .nav-wrap.sticky {
       margin-top:32px;
     }
+    
   </style>
 <?php } ?>
 </head>
