@@ -1,4 +1,3 @@
-
 @media screen and (max-width: $screen-xs-max) {
   #ninja_forms_field_9 {
     max-height:55px;
@@ -6,12 +5,12 @@
   #ninja_forms_field_10 {
     max-height:100px;
   }
-  .ninja-forms-form {
-    h3 {
+  .white-popup h3 {
       @include font-size(18px);
       border-bottom: 1px solid #ccc;
       padding-bottom: 5px;
     }
+  .ninja-forms-form {
     label {
       @include font-size(13px);
     }
