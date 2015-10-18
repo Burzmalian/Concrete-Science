@@ -1,0 +1,22 @@
+
+@media screen and (max-width: $screen-xs-max) {
+  #ninja_forms_field_9 {
+    max-height:55px;
+  }
+  #ninja_forms_field_10 {
+    max-height:100px;
+  }
+  .ninja-forms-form {
+    h3 {
+      @include font-size(18px);
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    label {
+      @include font-size(13px);
+    }
+    .field-wrap {
+      margin-bottom: 15px;
+    }
+  }
+}
