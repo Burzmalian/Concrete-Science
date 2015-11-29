@@ -213,3 +213,9 @@
     border-bottom:2px solid $gray-dark;
   }
 } 
+
+@media screen and (max-width: $screen-sm-max) {
+  span.phone-bar {
+    display:none;
+  }
+}

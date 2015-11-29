@@ -24,13 +24,6 @@ button.is-checked {
   margin-top:40px;
 }
 
-.gallery-item,
-.grid-sizer {
-  width: 30%;
-}
-
-.gutter {width:5%;}
-
 a.gallery-item {
   float: left;
   height: 350px;
@@ -80,4 +73,32 @@ a.gallery-item:hover img {
 
 .white-popup.gallery-popup {
   max-width: 1024px;
+}
+
+@media screen and (max-width: $screen-xs-max) {
+  .gallery-popup img {
+    width:100%;
+  }
+  .gallery-item,
+  .grid-sizer {
+    width: 100%;
+  }
+
+  .gutter {width:0;}
+}
+@media screen and (min-width: $screen-sm-min) {
+  .gallery-item,
+  .grid-sizer {
+    width: 45%;
+  }
+
+  .gutter {width:5%;}
+}
+@media screen and (min-width: $screen-md-min) {
+  .gallery-item,
+  .grid-sizer {
+    width: 30%;
+  }
+
+  .gutter {width:5%;}
 }

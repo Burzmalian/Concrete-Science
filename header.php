@@ -94,7 +94,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             ?>
             <div class="nav-cta">
               <a class="button medium _orange open-popup-link" href="#popup">Free Quote</a>
-              763-420-4073
+              <span class="phone-bar">763-420-4073</span>
             </div>
             <div class="nav-icon">
               <div></div>
