@@ -10,12 +10,12 @@
         
         <?php if( $field ) { ?>
         <?php  {
-            echo '<div class="col-sm-12 filter-menu"><button class="is-checked" data-filter="*">All Projects</a>';
+            echo '<div class="col-sm-12 filter-menu"><div><button class="is-checked" data-filter="*">All Projects</a>';
               foreach( $field['choices'] as $k => $v )
               {
                 echo '<button data-filter="' . '.' . $k . ' ' .'">' . $v . '</a>';
               }
-            echo '</div>';
+            echo '</div></div>';
           } ?>
         <?php }; ?> 
     </div>
@@ -23,7 +23,7 @@
 <?php if( have_rows('gallery_repeater') ): $i = 0; ?>
     <div class="clearfix">
       <div class="gallery">
-        <div class="grid-sizer"></div>
+        
         <div class="gutter"></div>
     <?php while ( have_rows('gallery_repeater') ) : the_row(); $i++; ?>
       
@@ -38,9 +38,15 @@
                                                     $value = $fields['value'];
                                                     $choices = $fields['choices'];
                                                     if( $value ): ?><?php foreach( $value as $j => $b ): ?><?php echo $b . ' '; ?><?php endforeach; ?><?php endif; ?> open-popup-link">
-          <h2><?php the_sub_field('gallery_title') ?></h2>
+          
           <div class="gallery-image-wrap"><img class="gallery-image" src="<?php echo $image_thumb; ?>" alt="<?php echo $alt; ?>"></div>
-          <p><?php echo wp_trim_words( get_sub_field('gallery_description' ), $num_words = 20, $more = '...' ); ?></p>
+          <h2><?php the_sub_field('gallery_title') ?></h2>
+          <p><?php
+                $limiter = 110; 
+                $texter = get_sub_field('gallery_description'); 
+            
+                echo truncate_chars($texter, $limiter);
+            ?></p>
         </a>
         
     <?php endwhile; ?>
@@ -54,9 +60,9 @@
 <?php while ( have_rows('gallery_repeater') ) : the_row(); $i++; ?>
 
   <?php //begin image stuff
-    $image = get_sub_field('gallery_image'); 
-    $image_thumb = $image['sizes']['b-thumb']; 
-    $image_small = $image['sizes']['b-small']; 
+    $image = get_sub_field('gallery_image');
+    $image_thumb = $image['sizes']['b-thumb'];
+    $image_small = $image['sizes']['b-small'];
     $image_medium = $image['sizes']['b-medium'];
     $alt = $image['alt'];
     $title = $image['title'];

@@ -160,4 +160,14 @@ add_filter('widget_text', 'do_shortcode');
 include_once('inc/acf-wp-wysiwyg/acf-wp_wysiwyg.php'); 
 
 
+//Truncate gallery descriptions
+function truncate_chars($text, $limit, $ellipsis = '...') {
+    if( strlen($text) > $limit ) {
+        $endpos = strpos(str_replace(array("\r\n", "\r", "\n", "\t"), ' ', $text), ' ', $limit);
+        if($endpos !== FALSE)
+            $text = trim(substr($text, 0, $endpos)) . $ellipsis;
+    }
+    return $text;
+}
+
 ?>

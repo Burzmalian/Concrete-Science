@@ -31,6 +31,12 @@ $(document).ready(function () {
     $('.main-menu').toggleClass('show');
   });
   
+});
+
+
+
+$(window).bind("load", function() {
+   $('.header-cta').addClass('hdr-active');
   
   function getHashFilter() {
     var hash = location.hash;
@@ -63,10 +69,9 @@ $(document).ready(function () {
       $container.isotope({
         itemSelector: '.gallery-item',
         percentPosition: true,
+        layoutMode: 'fitRows',
         filter: hashFilter,
-        masonry: {
-          // use element for option
-          columnWidth: '.grid-sizer',
+        fitRows: {
           gutter: '.gutter',
         }
       });
@@ -81,13 +86,6 @@ $(document).ready(function () {
     // trigger event handler to init Isotope
     onHashchange();
   });
-  
-});
-
-
-
-$(window).bind("load", function() {
-   $('.header-cta').addClass('hdr-active');
 });
 /*!
  * Isotope PACKAGED v2.2.2

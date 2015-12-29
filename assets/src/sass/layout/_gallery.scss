@@ -1,15 +1,22 @@
 .filter-menu {
   margin:20px 0 15px;
+  display:table;
+}
+
+.filter-menu > div {
+  display:table-cell;
+  text-align: center;
 }
 
 .filter-menu button {
   border:0;
-  padding:5px 10px;
+  padding:10px 12px;
   background:$gray-medium;
   margin-right:15px;
   border-radius:3px;
   color:#fff;
-  font-size:14px;
+  font-size:15px;
+  font-weight:bold;
   line-height:14px;
   margin-bottom:5px;
 }
@@ -26,8 +33,7 @@ button.is-checked {
 
 a.gallery-item {
   float: left;
-  height: 350px;
-  margin-bottom:15px;
+  margin-bottom:20px;
   text-decoration:none;
   color: #444;
   display:block;
@@ -75,12 +81,14 @@ a.gallery-item:hover img {
   max-width: 1024px;
 }
 
+
+
 @media screen and (max-width: $screen-xs-max) {
   .gallery-popup img {
     width:100%;
   }
   .gallery-item,
-  .grid-sizer {
+  {
     width: 100%;
   }
 
@@ -88,7 +96,7 @@ a.gallery-item:hover img {
 }
 @media screen and (min-width: $screen-sm-min) {
   .gallery-item,
-  .grid-sizer {
+ {
     width: 45%;
   }
 
@@ -96,7 +104,7 @@ a.gallery-item:hover img {
 }
 @media screen and (min-width: $screen-md-min) {
   .gallery-item,
-  .grid-sizer {
+  {
     width: 30%;
   }
 
